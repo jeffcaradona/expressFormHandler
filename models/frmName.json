@@ -1,0 +1,28 @@
+{
+    "id": "frmName",
+    "method": "post",
+    "action": "/form",
+    "inputs": [
+        {
+            "id": "strName",
+            "type": "text",
+            "name": "name",
+            "value": "",
+            "label": true
+        },
+        {
+            "id": "chkRemember",
+            "name": "remember",
+            "type": "checkbox",
+            "value": false,
+            "label": true
+        },
+        {
+            "id": "btnSubmit",
+            "name": null,
+            "type": "submit",
+            "value": "Submit",
+            "label": false
+        }
+    ]
+}

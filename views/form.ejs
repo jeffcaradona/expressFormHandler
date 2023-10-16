@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+
+  <link rel='stylesheet' href='/css/bootstrap.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src='/js/jquery.js' lang='text/javascript'></script>
+  <script src='/js/bootstrap.js' lang='text/javascript'></script>
+
+  <script src="/javascripts/form.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <%= message %>
+  </div>
+
+  <div class="container">
+    <form id="frmName" method="post" action="/form">
+      <div>
+        <span id="strName">
+          <label for="name">Name</label>
+          <input name="name" type="text" value="<%= formData.name %>">
+        </span>
+      </div>
+      <div>
+        <span id="chkRemember">
+          <label for="remember">Remember?</label>
+          <input name="remember" type="checkbox" <%=(formData.remember)?'checked':'';%> value="true">
+        </span>
+      </div>
+      <div>
+        <span id="btnSubmit"><input type="submit" value="Submit" /></span>
+        <input type="reset" />
+        <label id="error" />
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
